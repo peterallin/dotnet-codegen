@@ -1,0 +1,11 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+  <Target Name="Generated" Outputs="Generated.cs" Inputs="message.txt;gen.py" BeforeTargets="BeforeBuild;BeforeRebuild">
+    <Exec Command="./gen.py"/>
+  </Target>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>
